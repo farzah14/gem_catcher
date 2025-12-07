@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh3ynes1wn6kc"]
+
+[ext_resource type="Script" uid="uid://d020la1dki61l" path="res://Scenes/learning/learning.gd" id="1_hwvpi"]
+[ext_resource type="Texture2D" uid="uid://42yi3ouu2j0y" path="res://icon.svg" id="1_ptm2e"]
+
+[node name="Learning" type="Node2D"]
+script = ExtResource("1_hwvpi")
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture_filter = 2
+use_parent_material = true
+position = Vector2(585, 152)
+rotation = -0.039431572
+scale = Vector2(1.0579997, 1.0239433)
+texture = ExtResource("1_ptm2e")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+texture_filter = 2
+use_parent_material = true
+position = Vector2(359, 157)
+rotation = -0.039431572
+scale = Vector2(1.0579997, 1.0239433)
+texture = ExtResource("1_ptm2e")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+texture_filter = 2
+use_parent_material = true
+position = Vector2(788, 172)
+rotation = -0.077595115
+scale = Vector2(1.026116, 0.9612169)
+skew = -0.0025781393
+texture = ExtResource("1_ptm2e")
