@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://8wju6t42ld6x"]
+
+[ext_resource type="Script" uid="uid://cv3l30lxc7w62" path="res://Scenes/Paddle/paddle.gd" id="1_iwrur"]
+[ext_resource type="Texture2D" uid="uid://cyh06h8go83m7" path="res://assets/paddleBlu.png" id="1_lp5es"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gsum3"]
+height = 85.35
+
+[node name="Paddle" type="Area2D"]
+script = ExtResource("1_iwrur")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lp5es")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+rotation = 1.5707964
+scale = Vector2(1.225, 1.225)
+shape = SubResource("CapsuleShape2D_gsum3")
+debug_color = Color(0.89053833, 0.0002525902, 0.79445344, 0.41960785)
