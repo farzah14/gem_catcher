@@ -15,6 +15,10 @@ run/main_scene="uid://cmjdb16s7gx0a"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ScoreManagers="*res://scripts/managers/score_managers.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"

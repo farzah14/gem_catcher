@@ -1,14 +1,9 @@
 extends Area2D
 
 var SPEED: float = 300.0 #Speed for movement Paddle
-var total_point: int = 0 #total_point when gem touch/hit paddle
 
 #Signal that stores a parameter to get the gem that was hit.
 signal scored(gem_hit: Area2D) 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -25,5 +20,4 @@ func _process(delta: float) -> void:
 #Function send signal to gem.gd
 func _on_area_entered(area: Area2D) -> void:
 	scored.emit(area)
-	total_point+=1
-	print(total_point)
+	ScoreManagers.total_point(1)

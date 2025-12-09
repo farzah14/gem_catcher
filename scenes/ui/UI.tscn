@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cmjdb16s7gx0a"]
 
 [ext_resource type="Texture2D" uid="uid://dobl4xku0votn" path="res://assets/GameBg.png" id="1_u70sc"]
-[ext_resource type="Script" uid="uid://cato6k8iqwy3l" path="res://Scenes/ui/ui.gd" id="1_vmyls"]
-[ext_resource type="PackedScene" uid="uid://8wju6t42ld6x" path="res://Scenes/Paddle/paddle.tscn" id="2_lynu0"]
-[ext_resource type="PackedScene" uid="uid://b1l4wv21xm2gg" path="res://Scenes/gem/gem.tscn" id="3_ljcop"]
+[ext_resource type="Script" uid="uid://cato6k8iqwy3l" path="res://scenes/ui/ui.gd" id="1_vmyls"]
+[ext_resource type="PackedScene" uid="uid://8wju6t42ld6x" path="res://scenes/Paddle/paddle.tscn" id="2_lynu0"]
+[ext_resource type="PackedScene" uid="uid://b1l4wv21xm2gg" path="res://scenes/gem/gem.tscn" id="3_ljcop"]
 
 [node name="Ui" type="Node2D"]
 script = ExtResource("1_vmyls")
@@ -17,10 +17,10 @@ texture = ExtResource("1_u70sc")
 position = Vector2(591, 608)
 
 [node name="gem" parent="." instance=ExtResource("3_ljcop")]
-position = Vector2(1045, 159)
+position = Vector2(1047, 362)
 
 [node name="gem2" parent="." instance=ExtResource("3_ljcop")]
-position = Vector2(212, 179)
+position = Vector2(212, 224)
 
 [node name="gem3" parent="." instance=ExtResource("3_ljcop")]
 position = Vector2(603, 27)

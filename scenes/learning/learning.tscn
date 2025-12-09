@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bh3ynes1wn6kc"]
 
-[ext_resource type="Script" uid="uid://d020la1dki61l" path="res://Scenes/learning/learning.gd" id="1_hwvpi"]
+[ext_resource type="Script" uid="uid://d020la1dki61l" path="res://scenes/learning/learning.gd" id="1_hwvpi"]
 [ext_resource type="Texture2D" uid="uid://42yi3ouu2j0y" path="res://icon.svg" id="1_ptm2e"]
 
 [node name="Learning" type="Node2D"]

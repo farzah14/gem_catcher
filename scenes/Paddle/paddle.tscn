@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://8wju6t42ld6x"]
 
-[ext_resource type="Script" uid="uid://cflf53j8sbkyr" path="res://Scenes/Paddle/paddle.gd" id="1_iwrur"]
+[ext_resource type="Script" uid="uid://cflf53j8sbkyr" path="res://scenes/Paddle/paddle.gd" id="1_iwrur"]
 [ext_resource type="Texture2D" uid="uid://cyh06h8go83m7" path="res://assets/paddleBlu.png" id="1_lp5es"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gsum3"]
@@ -20,7 +20,7 @@ shape = SubResource("CapsuleShape2D_gsum3")
 debug_color = Color(0.89053833, 0.0002525902, 0.79445344, 0.41960785)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_paddle_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="scored" from="." to="." method="_on_scored"]
 [connection signal="scored" from="." to="." method="to_string"]
