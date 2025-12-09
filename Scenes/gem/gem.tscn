@@ -17,3 +17,7 @@ position = Vector2(0.39513946, -0.10765584)
 rotation = -2.3430421
 scale = Vector2(1.8064018, 1.9772536)
 shape = SubResource("RectangleShape2D_f2soh")
+
+[connection signal="body_entered" from="." to="." method="_on_game_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_gem_body_entered"]
