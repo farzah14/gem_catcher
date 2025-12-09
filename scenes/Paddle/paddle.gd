@@ -4,7 +4,7 @@ var SPEED: float = 300.0 #Speed for movement Paddle
 
 #Signal that stores a parameter to get the gem that was hit.
 signal scored(gem_hit: Area2D) 
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	#Movement_paddle using get_axis(-1, 1)
@@ -18,6 +18,6 @@ func _process(delta: float) -> void:
 	)
 	
 #Function send signal to gem.gd
-func _on_area_entered(area: Area2D) -> void:
-	scored.emit(area)
-	ScoreManagers.total_point(1)
+func _on_area_entered(area) -> void:
+	if area.is_in_group("gems"):
+		scored.emit(area)
